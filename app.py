@@ -134,7 +134,6 @@ def pizzeria():
                 response = make_response(render_template('Pizzeria.html', form=pizzeria_clas,
                                                          orders=orders, ventas=ventas))
                 return response
-
             nombre=pizzeria_clas.nombre.data
             direccion=pizzeria_clas.direccion.data
             telefono=pizzeria_clas.telefono.data

@@ -40,4 +40,5 @@ class PizzeriaForm(Form):
     ingredientes = MultiCheckboxField('Ingredientes', choices=[('jamon','Jamon $10'),
                                                                ('pina','Piña $10'),
                                                                ('champi','Champiñones $10')])
+    
     cantidad = IntegerField('Num. de Pizzas', [validators.DataRequired(message='Cantidad requerida')], default=1)
